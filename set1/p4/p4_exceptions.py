@@ -29,7 +29,7 @@ while True:
             break
 
         else:
-            raise ValueError("Invalid menu choice.")
+            raise ValueError("Invalid Menu choice.")
 
     except ValueError as e:
         print("Error:", e)
