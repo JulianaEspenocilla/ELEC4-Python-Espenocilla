@@ -4,7 +4,46 @@
 # Date :  November 2026
 
 
+grades = []
 
+
+def enter_grades():
+    grades.clear()
+
+    for i in range(5):
+        while True:
+            try:
+                grade = float(input(f"Enter grade {i + 1}: "))
+
+                if 0 <= grade <= 100:
+                    grades.append(grade)
+                    break
+                else:
+                    print("Grade must be from 0 to 100.")
+
+            except ValueError:
+                print("Invalid input. Please try again.")
+
+
+def get_average(grades):
+    return sum(grades) / len(grades)
+
+
+def get_highest(grades):
+    return max(grades)
+
+
+def get_lowest(grades):
+    return min(grades)
+
+
+def get_status(grades):
+    average = get_average(grades)
+
+    if average >= 75:
+        return "PASS"
+    else:
+        return "FAIL"
 
 while True:
     print("\n----- MENU -----")
