@@ -30,21 +30,6 @@ def remove_student():
     print("Student not found.")
 
 
-def search_student():
-    keyword = input("Search name: ").strip().lower()
-
-    found = []
-
-    for student in students:
-        if keyword in student.lower():
-            found.append(student)
-
-    if found:
-        print("\nSearch Results:")
-        for student in found:
-            print(student)
-    else:
-        print("No student found.")
 
 
 def display_students():
