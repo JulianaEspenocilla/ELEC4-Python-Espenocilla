@@ -3,6 +3,7 @@
 # Activity: P1 - Student Grade Calculator
 # Date :  November 2026
 
+
 grades = []
 
 
@@ -43,7 +44,6 @@ def get_status(grades):
         return "PASS"
     else:
         return "FAIL"
-
 
 while True:
     print("\n----- MENU -----")
