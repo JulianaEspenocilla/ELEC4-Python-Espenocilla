@@ -31,23 +31,7 @@ while True:
         else:
             raise ValueError("Invalid Menu choice.")
 
-    except ValueError as e:
-        print("Error:", e)
-
-    except ZeroDivisionError:
-        print("Error: Cannot divide by zero.")
-
-    except FileNotFoundError:
-        print("Error: File not found.")
-
-    else:
-        if choice == "1":
-            print("Result:", result)
-
-        elif choice == "2":
-            print("\nFile Contents:")
-            print(content)
-            file.close()
+    
 
     finally:
         print("Operation completed.")
