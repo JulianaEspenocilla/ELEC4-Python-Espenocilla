@@ -1,0 +1,53 @@
+# Name: Juliana Marie D. Espenocilla
+# Section: 4-BSIT C
+# Activity: P4 - Safe Menu Program
+# Date: November 2026
+
+while True:
+    print("\n===== MENU =====")
+    print("1. Division")
+    print("2. Open File")
+    print("3. Exit")
+
+    choice = input("Enter choice: ")
+
+    try:
+        if choice == "1":
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+
+            result = num1 / num2
+
+        elif choice == "2":
+            filename = input("Enter file name: ")
+
+            file = open(filename, "r")
+            content = file.read()
+
+        elif choice == "3":
+            print("Program Ended")
+            break
+
+        else:
+            raise ValueError("Invalid menu choice.")
+
+    except ValueError as e:
+        print("Error:", e)
+
+    except ZeroDivisionError:
+        print("Error: Cannot divide by zero.")
+
+    except FileNotFoundError:
+        print("Error: File not found.")
+
+    else:
+        if choice == "1":
+            print("Result:", result)
+
+        elif choice == "2":
+            print("\nFile Contents:")
+            print(content)
+            file.close()
+
+    finally:
+        print("Operation completed.")
