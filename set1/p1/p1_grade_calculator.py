@@ -21,7 +21,7 @@ def enter_grades():
                     print("Grade must be from 0 to 100.")
 
             except ValueError:
-                print("Invalid input. Try again.")
+                print("Invalid input. Please try again.")
 
 
 def get_average(grades):
