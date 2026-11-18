@@ -1,6 +1,6 @@
 # Name: Juliana Marie D. Espenocilla
 # Section: 4-BSIT C
-# Activity: P2 - main_program
+# Activity: P2 - custom module
 # Date: November 2026
 
 import student_utils

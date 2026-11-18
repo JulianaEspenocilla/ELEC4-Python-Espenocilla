@@ -1,6 +1,6 @@
 # Name: Juliana Marie D. Espenocilla
 # Section: 4-BSIT C
-# Activity: P3 - Student Record Manager
+# Activity: P3 - student Record manager
 # Date: November 2026
 
 students = []
